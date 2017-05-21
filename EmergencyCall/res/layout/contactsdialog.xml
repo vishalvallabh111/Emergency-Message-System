@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:padding="10dp"
+     android:background="@drawable/buttonborder" >
+    
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Contact Number: "
+        android:textColor="#FFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText
+        android:id="@+id/phoneoneid"
+        android:layout_width="200dp"
+        android:layout_height="30dp" 
+        android:background="@drawable/textborder"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:hint="contact person one...">
+         
+        <requestFocus />
+    </EditText>
+    
+       <EditText
+        android:id="@+id/phonetwoid"
+        android:layout_width="200dp"
+        android:layout_height="30dp" 
+        android:background="@drawable/textborder"
+        android:inputType="phone"
+        android:hint="contact person two..."
+        android:layout_marginTop="10dp">
+         
+        <requestFocus />
+    </EditText>
+</LinearLayout>

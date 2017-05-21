@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    tools:context=".EmergencyAlert" >
+
+    <RelativeLayout
+        android:id="@+id/rlytid"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/buttonborder" >
+
+        <TextView
+            android:id="@+id/titleid"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Emergency Call"
+            android:textColor="#EF0B0B"
+            android:textSize="25sp"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlytid" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+              android:id="@+id/tglbtn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textOn="Timer on"
+             android:layout_marginTop="10dp"
+             android:layout_centerHorizontal="true"
+              android:textOff="Timer off"
+              />
+
+
+
+
+
+            <Button
+                android:id="@+id/sndid"
+                android:layout_width="275dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/buttonborder"
+                android:text="Click Here to Send Info"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:typeface="serif" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/edtnameid"
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/sndid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/textborder"
+                android:hint="enter name here..."
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/locnameid"
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/edtnameid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/textborder"
+                android:gravity="center_vertical"
+
+                android:singleLine="true"
+                android:text="location displays here..." />
+
+            <EditText
+                android:id="@+id/msgid"
+                android:layout_width="270dp"
+                android:layout_height="125dp"
+                android:layout_below="@id/locnameid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:gravity="top"
+                android:background="@drawable/textborder"
+                android:hint="enter message here..."
+                android:inputType="textMultiLine"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/saveid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msgid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/buttonborder"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+
+             <View
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_below="@id/saveid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+
+
+
+
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/cntid"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonborder"
+            android:text="Add Contacts"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
